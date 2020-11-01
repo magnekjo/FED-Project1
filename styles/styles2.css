@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'oswald', sans-serif;
+    color: #0A3641;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid #0A3641 8px;
+    margin-bottom: 20px;
+}
+.navbar-links {
+    width: 66%;
+}
+.navbar-links ul, input {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+}
+nav input {
+    margin-right: 10px;
+    font-family: inherit;
+    width: 15rem;
+}
+.navbar-links li a {
+    padding: 1rem;
+    display: inline;
+}
+.logo {
+    margin: 1rem;
+    width: 8em;
+    height: auto;
+}
+nav li {
+    list-style: none;
+}
+.nav-icons {
+    position: absolute;
+    top: 1vh;
+    right: 5.5vw;
+}
+.nav-icons i {
+    font-size: 20px;
+    margin-left: 40px;
+}
+nav li a:visited, .shop-now-link:visited, nav .nav-icons a:visited {
+    color: #0A3641;
+}
+nav .nav-icons a:hover {
+    background-color: rgba(160, 160, 160, 0.5);
+}
+nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav input {
+    border: solid #0A3641 2px;
+    padding: 5px;
+}
+.active {
+    text-decoration: underline;
+}
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #0A3641;
+    border-radius: 10px;
+}
+@media (max-width: 800px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links, nav input, .nav-icons {
+        display: none; 
+        width: 100%;
+    }
+
+}
+.container {
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+    height: 60vh;
+    background-image: url("/images/specialoffers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.special-image {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+}
+.shop-now {
+    position: relative;
+    top: 68%;
+    left: 10%;
+    margin: 0%;
+    font-size: 45px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(160, 160, 160, 0.8)
+    }
+.shop-now:hover {
+    background-color: rgba(160, 160, 160, 0.95)
+}
+.subheader {
+    display: block;
+    color: white;
+    background-color: #0A3641;
+    padding: 10px;
+}
+.jacket-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.jacket-image {
+    width: 14.25rem;
+    height: auto;
+    border: solid #0A3641 2px;
+}
+.rain-texture {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    background-image: url("/images/raintexture.png");
+    flex-wrap: wrap;
+}
+.activity-container {
+    position: relative;
+    text-align: center;
+    margin-top: 18px;
+    background-color: khaki;
+    width: 26em;
+    height: 28em;
+}
+
+.activity-container a {
+    position: relative;
+    text-decoration: none;
+    top: 50%;
+    font-size: 45px;
+    background-color: rgba(160, 160, 160, 0.8);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width: 1300px) {
+    .rain-texture {
+        height: 400px;
+    }
+    .activity-container {
+        top: 10%;
+        width: 16em;
+        height: 18em;
+    }
+    .activity-container a {
+        position: relative;
+        text-decoration: none;
+        font-size: 35px;
+        background-color: rgba(160, 160, 160, 0.8);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 8px) {
+    .rain-texture {
+        height: 600px;
+    }
+    .activity-container {
+        top: 5%;
+        width: 12em;
+        height: 14em;
+    }
+    .activity-container a {
+        position: relative;
+        text-decoration: none;
+        font-size: 25px;
+        background-color: rgba(160, 160, 160, 0.8);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.activity-container a:hover {
+    background-color: rgba(160, 160, 160, 0.95);
+}
+.activity-container a:visited {
+    color: #0A3641;
+}
+#a-1 {
+    background-image: url('/images/hiking.jpg');
+    background-size: cover;
+}
+#a-2 {
+    background-image: url('/images/kayak.jpg');
+    background-size: cover;
+}
+#a-3 {
+    background-image: url('/images/skiing.jpg');
+    background-size: cover;
+}

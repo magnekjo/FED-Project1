@@ -25,6 +25,7 @@ nav li {
     text-decoration: underline;
 }
 .logo {
+    floa
     margin-left: 15px;
     width: 10.813em;
     height: auto;
@@ -42,7 +43,7 @@ nav li {
     border-bottom: solid #0A3641 2px;
 }
 .specialoffers {
-    width: 1640px;
+    width: 100%;
     height: auto;
 }
 .featured {

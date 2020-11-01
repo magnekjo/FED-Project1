@@ -4,25 +4,80 @@
     <title>Homepage</title>
     <meta name="description" content="All-weather jacket store.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/styles/styles3.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c286c2ac64.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"><img src="images/RainyDays_Logo.png"</a>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="gender.html">SHOP</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
+      <nav class="navbar-wrapper">
+        <a href="index.html"><img class="logo" src="images/RainyDays_Logo.png"></a>
+        <div id="navbar" class="navbar-container">
+          <a href="#" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div id="navbar-menu" class="navbar-menu">
+            <ul>
+              <li><a href="cart.html">CART</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a class="active" href="gender.html">SHOP</a></li>
+              <li><a href="contact.html ">CONTACT</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="gender.html">SHOP</a></li>
+            <li><a href="contact.html ">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+          <div class="nav-right">
+            <div class="nav-icons">
+              <a href="#"><i class="fas fa-user"></i></a>
+              <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <input type="text" placeholder="Search..">
+          </div>
+        </div>   
       </nav>
     </header>
-   
-    <main>
-
+    <main id="contact-main">
+      <div class="faq">
+        <h2>CONTACT US</h2>
+        <h3>If you have any questions about your order, please read our <a href="#">FAQ</a> to see if that answers your question. If not, feel free to contact us using this form.</h3>
+      </div>
+      <form class="user-info" action="submit.php" method="POST">
+        <h4>* Required</h4>
+        <input type="text" placeholder="First name *">
+        <input type="text" placeholder="Last name *">
+        <input type="email" placeholder="E-mail *">
+        <input type="tel" placeholder="Phone number">
+        <input type="text" placeholder="Transaction id">
+        <textarea id="question" name="My question" cols="40" rows="16">My question *</textarea>
+        <button type="submit" class="submit">SUBMIT</button>
+      </form>
     </main>
     <footer>
-
+      <div class="orange-bar"></div>
+      <div class="green-bar">
+        <span class="shop">
+          <h2>SHOP</h2>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+        </span>
+        <span class="rainydays">
+          <h2>RAINYDAYS</h2>
+          <a href="#">About</a>
+          <a href="#">Career</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+        </span>
+      </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>

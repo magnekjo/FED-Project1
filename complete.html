@@ -4,25 +4,83 @@
     <title>Homepage</title>
     <meta name="description" content="All-weather jacket store.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/styles/styles3.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c286c2ac64.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"><img src="images/RainyDays_Logo.png"</a>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="gender.html">SHOP</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
+      <nav class="navbar-wrapper">
+        <a href="index.html"><img class="logo" src="images/RainyDays_Logo.png"></a>
+        <div id="navbar" class="navbar-container">
+          <a href="#" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div id="navbar-menu" class="navbar-menu">
+            <ul>
+              <li><a href="cart.html">CART</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a class="active" href="gender.html">SHOP</a></li>
+              <li><a href="contact.html ">CONTACT</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="gender.html">SHOP</a></li>
+            <li><a href="contact.html ">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+          <div class="nav-right">
+            <div class="nav-icons">
+              <a href="#"><i class="fas fa-user"></i></a>
+              <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <input type="text" placeholder="Search..">
+          </div>
+        </div>   
       </nav>
     </header>
-   
-    <main>
-
+    <main id="complete-main">
+      <div class="complete-left">
+        <h4>CHECKOUT COMPLETE</h4>
+        <p>Thank you for your order!</p>
+        <p>You will recieve an e-mail confirmation shortly at user@mailbox.com</p>
+        <p><a href="#">Print receipt</a></p>
+        <p id="t-id">Transaction id: 1234567890</p>
+        <p>Save your information for next time</p>
+        <form>
+          <input type="password" placeholder="Create password">
+          <input type="password" placeholder="Verify password">
+          <button>CREATE ACCOUNT</button>
+        </form>
+      </div>
+      <div class="complete-left">
+        <p>Do you have any questions?</p>
+        <p><a href="/contact.html">Contact us</a></p>
+      </div>
     </main>
     <footer>
-
+      <div class="orange-bar"></div>
+      <div class="green-bar">
+        <span class="shop">
+          <h2>SHOP</h2>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+        </span>
+        <span class="rainydays">
+          <h2>RAINYDAYS</h2>
+          <a href="#">About</a>
+          <a href="#">Career</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+        </span>
+      </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>

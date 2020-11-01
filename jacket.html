@@ -4,25 +4,96 @@
     <title>Homepage</title>
     <meta name="description" content="All-weather jacket store.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/styles/styles3.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c286c2ac64.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"><img src="images/RainyDays_Logo.png"</a>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="gender.html">SHOP</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
+      <nav class="navbar-wrapper">
+        <a href="index.html"><img class="logo" src="images/RainyDays_Logo.png"></a>
+        <div id="navbar" class="navbar-container">
+          <a href="#" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div id="navbar-menu" class="navbar-menu">
+            <ul>
+              <li><a href="cart.html">CART</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a class="active" href="gender.html">SHOP</a></li>
+              <li><a href="contact.html ">CONTACT</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="gender.html">SHOP</a></li>
+            <li><a href="contact.html ">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+          <div class="nav-right">
+            <div class="nav-icons">
+              <a href="#"><i class="fas fa-user"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <input type="text" placeholder="Search..">
+          </div>
+        </div>   
       </nav>
     </header>
-   
-    <main>
-
+    <main id="product-main">
+      <div class="product-card-left">
+        <div class="product-image">
+          <img src="/images/jackets/jacket3.jpg" alt="black down vest">
+          <span class="buttons-bar">
+            <button><i class="fas fa-share-alt"></i></button>
+            <button><i class="fas fa-search-plus"></i></button>
+            <button><i class="fas fa-search-minus"></i></button>
+            <button><i class="fas fa-heart"></i></button>
+          </span>
+        </div>
+      <div class="product-card-right">
+        <div class="product-info">
+          <h4>Product Name</h4>
+          <p>Product Description - Ultrices dui sapien eget mi proin sed. Volutpat ac tincidunt vitae 
+            semper quis lectus nullaat volutpat. Est sit amet facilisis magna. Ornare massa eget 
+            egestas purus viverra.</p>
+          <h4>Price</h4>
+        </div>
+        <div class="product-selection">
+          <a href="#"><i class="fas fa-cart-plus"></i> ADD TO CART</a>
+          <div class="align">
+            <p>Pick color</p>
+            <button>Choose Size <i class="fas fa-angle-down"></i></button>
+          </div>
+          <span>
+            <button id="b-1"></button>
+            <button id="b-2"></button>
+            <button id="b-3"></button>
+          </span>
+      </div>
     </main>
     <footer>
-
+      <div class="orange-bar"></div>
+      <div class="green-bar">
+        <span class="shop">
+          <h2>SHOP</h2>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+        </span>
+        <span class="rainydays">
+          <h2>RAINYDAYS</h2>
+          <a href="#">About</a>
+          <a href="#">Career</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+        </span>
+      </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>

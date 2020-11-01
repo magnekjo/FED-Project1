@@ -602,7 +602,7 @@ h2 {
     font-size: 14px;
     color: #0A3641;
 }
-@media (max-width: 845px) {
+@media (max-width: 910px) {
     .product-card-left {
         flex-direction: column;
     }

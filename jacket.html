@@ -9,39 +9,39 @@
   </head>
   <body>
     <header>
-      <nav class="navbar-wrapper">
-        <a href="index.html"><img class="logo" src="images/RainyDays_Logo.png"></a>
-        <div id="navbar" class="navbar-container">
-          <a href="#" class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div id="navbar-menu" class="navbar-menu">
-            <ul>
-              <li><a href="cart.html">CART</a></li>
-              <li><a href="index.html">HOME</a></li>
-              <li><a class="active" href="gender.html">SHOP</a></li>
-              <li><a href="contact.html ">CONTACT</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="navbar">
+      <nav>
+        <a href="index.html"
+          ><img class="logo" src="images/RainyDays_Logo.png" alt="Brand logo"
+        /></a>
+        <div class="navbar-links">
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a class="active" href="gender.html">SHOP</a></li>
-            <li><a href="contact.html ">CONTACT</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="active">
+              <a href="gender.html"></a>SHOP</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
           </ul>
-          <div class="nav-right">
-            <div class="nav-icons">
-              <a href="#"><i class="fas fa-user"></i></a>
-              <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-            <input type="text" placeholder="Search..">
+        </div>
+        <div class="nav-right">
+          <div class="nav-icons">
+            <a href="cart.html"
+              ><i class="fas fa-shopping-cart"></i><span>0</span></a
+            >
           </div>
-        </div>   
+          <input type="text" placeholder="Search.." />
+        </div>
+        <a href="#" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
       </nav>
     </header>
     <main id="product-main">
@@ -64,16 +64,11 @@
           <h4>Price</h4>
         </div>
         <div class="product-selection">
-          <a href="#"><i class="fas fa-cart-plus"></i> ADD TO CART</a>
+          <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>ADD TO CART</a>
           <div class="align">
-            <p>Pick color</p>
-            <button>Choose Size <i class="fas fa-angle-down"></i></button>
+            <span><b>Color:</b> Blue</span>
+            <span><b>Size:</b> XL</span>
           </div>
-          <span>
-            <button id="b-1"></button>
-            <button id="b-2"></button>
-            <button id="b-3"></button>
-          </span>
       </div>
     </main>
     <footer>
@@ -95,5 +90,6 @@
       </div>
     </footer>
     <script src="/js/script.js"></script>
+    <script src="/js/shoppingCart.js"></script>
   </body>
 </html>
